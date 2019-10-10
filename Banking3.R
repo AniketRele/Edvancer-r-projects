@@ -82,38 +82,6 @@ z=sapply(bank,function(x) is.character(x))
 z=z[z==T]
 z
 
-# table(bank$pdays)
-# quantile(bank$pdays)
-# bank$pdays=ifelse(bank$pdays <= -1, 1, 
-#                   ifelse(bank$pdays <= -1, 2, 
-#                          ifelse(bank$pdays <= -1, 3, 4)))
-# 
-# table(bank$campaign)
-# quantile(bank$campaign)
-# bank$campaign=ifelse(bank$campaign <= 1, 1, 
-#                      ifelse(bank$campaign <= 2, 2, 
-#                             ifelse(bank$campaign <= 3, 3, 4)))
-# 
-# table(bank$duration)
-# quantile(bank$duration)
-# bank$duration=ifelse(bank$duration <= 103, 1, 
-#                      ifelse(bank$duration <= 180, 2, 
-#                             ifelse(bank$duration <= 319, 3, 4)))
-# 
-# glimpse(bank)
-# 
-# table(bank$balance)
-# quantile(bank$balance)
-# bank$balance=ifelse(bank$balance <= 72, 1, 
-#                     ifelse(bank$balance <= 448, 2, 
-#                            ifelse(bank$balance <= 1428, 3, 4)))
-# 
-# table(bank$day)
-# quantile(bank$day)
-# bank$day=ifelse(bank$day <= 8, 1, 
-#                 ifelse(bank$day <= 16, 2, 
-#                        ifelse(bank$day <= 21, 3, 4)))
-
 glimpse(bank)
 #####CHECKING FOR NA VALUES.
 lapply(bank,function(x) sum(is.na(x)))
